@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة البطاقات</title>
+   <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" onclick="redirectToPage('post1.html')">
+            <h2>Post 3</h2>
+        </div>
+        <div class="card" onclick="redirectToPage('page2.html')">
+            <h2>Post 2</h2>
+        </div>
+        <div class="card" onclick="redirectToPage('post1.html')">
+            <h2>Post 1</h2>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+    window.location.href = page;
+}
+    </script>
+</body>
+</html>

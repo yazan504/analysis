@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Machine - خطة النشر والمحتوى</title>
+    <style>
+        /* تنسيقات عامة */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            color: #1e3a8a;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-size: 1.8em;
+            color: #1e40af;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        h2:hover {
+            color: #1d4ed8;
+        }
+        h2::after {
+            content: '▼';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8em;
+            transition: transform 0.3s ease;
+        }
+        h2.collapsed::after {
+            transform: rotate(180deg);
+        }
+        h3 {
+            font-size: 1.4em;
+            color: #1e3a8a;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #475569;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            color: #334155;
+        }
+        .highlight {
+            background-color: #e0f2fe;
+            padding: 15px;
+            border-left: 5px solid #0ea5e9;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #1e40af;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #1e3a8a;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #64748b;
+        }
+        /* إخفاء البنود الافتراضي */
+        .content-section {
+            display: none;
+            margin-top: 10px;
+        }
+        .content-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>الإرشادات العامة والتحليل المتبع لـ Code Machine</h1>
+        <div class="highlight">
+            <p>مرحبًا حنين العزب في صفحة الإرشادات العامة و التحليل لشركة Code Machine. هنا ستجد استراتيجية مفصلة لتعزيز وجودنا على إنستغرام وجذب العملاء.(لا تنسي تحطي التاسكات على البرنامج يا حنين)</p>
+        </div>
+
+        <!-- الأهداف -->
+        <h2 onclick="toggleSection('goals')">الأهداف</h2>
+        <div id="goals" class="content-section">
+            <h3>زيادة الوعي بالعلامة التجارية</h3>
+            <ul>
+                <li>إنشاء محتوى تعريفي عن الشركة (فيديوهات، صور، إنفوجرافيك).</li>
+                <li>مشاركة قيم الشركة ورؤيتها ورسالتها.</li>
+                <li>استخدام قصص قصيرة (Stories) لتقديم الشركة بشكل شخصي.</li>
+                <li>نشر محتوى يعكس تخصص الشركة في التصميم والتطوير.</li>
+            </ul>
+
+            <h3>جذب العملاء المحتملين</h3>
+            <ul>
+                <li>تقديم عروض خاصة للمتابعين (خصومات، هدايا).</li>
+                <li>إنشاء محتوى يوضح فوائد خدمات الشركة (مثل: كيف يمكن لتطبيق أو موقع أن يحسن من عملك؟).</li>
+                <li>استخدام Call-to-Action (CTA) في كل منشور لتشجيع المتابعين على التواصل (مثل: "تواصل معنا الآن!").</li>
+            </ul>
+
+            <h3>بناء الثقة</h3>
+            <ul>
+                <li>نشر صور وفيديوهات لعملاء سابقين مع شرح للتحديات والحلول.</li>
+                <li>مشاركة تقييمات العملاء وشهاداتهم.</li>
+                <li>عرض "قبل وبعد" للمشاريع التي تم تنفيذها.</li>
+            </ul>
+
+            <h3>زيادة التفاعل</h3>
+            <ul>
+                <li>استخدام استطلاعات الرأي والأسئلة في Stories.</li>
+                <li>تنظيم مسابقات وجوائز صغيرة.</li>
+                <li>الرد على التعليقات والرسائل بسرعة.</li>
+            </ul>
+        </div>
+
+        <!-- تحديد الجمهور المستهدف -->
+        <h2 onclick="toggleSection('audience')">تحديد الجمهور المستهدف</h2>
+        <div id="audience" class="content-section">
+            <h3>رواد الأعمال</h3>
+            <p>الخصائص: يحتاجون إلى بناء هوية بصرية قوية وتطبيقات ومواقع لبدء مشاريعهم.</p>
+            <ul>
+                <li>نشر محتوى عن كيفية بناء هوية بصرية ناجحة.</li>
+                <li>تقديم نصائح حول إدارة المشاريع الرقمية.</li>
+                <li>عرض حالات دراسية لرواد أعمال نجحوا مع "Code Machine".</li>
+            </ul>
+
+            <h3>الشركات الصغيرة والمتوسطة</h3>
+            <p>الخصائص: تبحث عن تطوير وجودها الرقمي لزيادة مبيعاتها ووصولها للعملاء.</p>
+            <ul>
+                <li>نشر محتوى عن أهمية المواقع والتطبيقات في زيادة المبيعات.</li>
+                <li>عرض عروض خاصة للشركات الصغيرة.</li>
+                <li>مشاركة قصص نجاح لشركات مماثلة.</li>
+            </ul>
+
+            <h3>المطورين والمصممين</h3>
+            <p>الخصائص: مهتمون بالتعلم أو التعاون مع الشركة.</p>
+            <ul>
+                <li>نشر محتوى تعليمي عن التصميم والتطوير.</li>
+                <li>مشاركة نصائح وأدوات مفيدة للمطورين والمصممين.</li>
+                <li>عرض فرص التعاون أو التوظيف في الشركة.</li>
+            </ul>
+        </div>
+
+        <!-- التحليل التنافسي -->
+        <h2 onclick="toggleSection('competitive-analysis')">التحليل التنافسي</h2>
+        <div id="competitive-analysis" class="content-section">
+            <h3>دراسة المنافسين</h3>
+            <ul>
+                <li>تحليل استراتيجيات التسويق الرقمي للمنافسين الرئيسيين.</li>
+                <li>مراقبة حملاتهم الإعلانية وتفاعل الجمهور معها.</li>
+                <li>تحديد نقاط القوة والضعف لدى المنافسين.</li>
+            </ul>
+
+            <h3>فرص السوق</h3>
+            <ul>
+                <li>تحديد الفجوات في السوق التي يمكن استغلالها.</li>
+                <li>تحليل احتياجات العملاء غير الملبّاة.</li>
+                <li>اقتراح حلول مبتكرة لتلبية هذه الاحتياجات.</li>
+            </ul>
+        </div>
+
+        <!-- إدارة الحملات الإعلانية -->
+        <h2 onclick="toggleSection('ad-campaigns')">إدارة الحملات الإعلانية</h2>
+        <div id="ad-campaigns" class="content-section">
+            <h3>تخطيط الحملات</h3>
+            <ul>
+                <li>تحديد أهداف الحملة (زيادة الوعي، جذب العملاء، زيادة المبيعات).</li>
+                <li>اختيار الجمهور المستهدف بناءً على البيانات.</li>
+                <li>إعداد ميزانية واضحة للحملة.</li>
+            </ul>
+
+            <h3>تنفيذ الحملات</h3>
+            <ul>
+                <li>إنشاء محتوى إعلاني جذاب (صور، فيديوهات، نصوص).</li>
+                <li>استخدام أدوات الإعلانات مثل Facebook Ads وGoogle Ads.</li>
+                <li>اختبار الحملات باستخدام A/B Testing.</li>
+            </ul>
+
+            <h3>متابعة الأداء</h3>
+            <ul>
+                <li>تحليل معدلات التحويل (Conversion Rates).</li>
+                <li>قياس تكلفة الحصول على عميل جديد (Customer Acquisition Cost).</li>
+                <li>تعديل الحملات بناءً على النتائج.</li>
+            </ul>
+        </div>
+
+        <!-- قياس الأداء -->
+        <h2 onclick="toggleSection('performance-measurement')">قياس الأداء</h2>
+        <div id="performance-measurement" class="content-section">
+            <h3>أدوات التحليل</h3>
+            <ul>
+                <li>استخدام Google Analytics لمراقبة حركة المرور على الموقع.</li>
+                <li>تحليل Instagram Insights لفهم تفاعل الجمهور.</li>
+                <li>استخدام أدوات مثل SEMrush وAhrefs لتحليل الكلمات المفتاحية.</li>
+            </ul>
+
+            <h3>مؤشرات الأداء الرئيسية (KPIs)</h3>
+            <ul>
+                <li>معدل التفاعل (Engagement Rate).</li>
+                <li>عدد المتابعين الجدد.</li>
+                <li>عدد العملاء المحتملين المحولين.</li>
+            </ul>
+        </div>
+
+        <!-- تحسين تجربة المستخدم -->
+        <h2 onclick="toggleSection('ux-improvement')">تحسين تجربة المستخدم (لاحقاً)</h2>
+        <div id="ux-improvement" class="content-section">
+            <h3>تصميم واجهة المستخدم (UI)</h3>
+            <ul>
+                <li>استخدام ألوان وأنماط تتناسب مع هوية العلامة التجارية.</li>
+                <li>تصميم واجهات مستخدم سهلة الاستخدام وسريعة التحميل.</li>
+                <li>إضافة عناصر تفاعلية مثل الأزرار المتحركة.</li>
+            </ul>
+
+            <h3>تجربة المستخدم (UX)</h3>
+            <ul>
+                <li>إجراء اختبارات قابلية الاستخدام (Usability Testing).</li>
+                <li>جمع ردود فعل العملاء حول المنتجات والخدمات.</li>
+                <li>تحسين تصميم الموقع ليكون متجاوبًا مع جميع الأجهزة.</li>
+            </ul>
+        </div>
+
+        
+    </div>
+    <footer>
+        &copy; 2025 Code Machine. جميع الحقوق محفوظة.
+    </footer>
+
+    <script>
+        // دالة لإظهار/إخفاء البنود
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            const header = document.querySelector(`h2[onclick="toggleSection('${sectionId}')"]`);
+            if (section.classList.contains('active')) {
+                section.classList.remove('active');
+                header.classList.add('collapsed');
+            } else {
+                section.classList.add('active');
+                header.classList.remove('collapsed');
+            }
+        }
+    </script>
+</body>
+</html>
